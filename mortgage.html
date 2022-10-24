@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<script src="jsfiles/morgage.js"></script>
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-light">
@@ -47,19 +47,22 @@
   </nav>
 
 <h1>Mortgage Calculator</h1>
-<p>Principal:</p>
-<input type="text">
+<p>Loan Amount :</p>
+<input type="number" id="Principal">
 <p>Intrest Rate:</p>
-<input type="text">
+<input type="number" id="Rate" value="5">
   
 <p>Loan Lenght</p>
-<input type="text">
-<input type="button" value="calculate ">
-<p>Montly Payment</p>
-<input type="text" id="Total">
-<p>Totoal Intrest Paid </p>
-<input type="text" id="Total">
+<input type="number" id="lenght" value="4">
+<p>Total Numbet of paid period <span>(optional)</span></p>
+<input type="number" id="paid" value="0">
+<input type="button" id="calc" value="calculate" >
+<h5 id="monthlyPayment"></h5>
+
+<h5 id="InteresttoPay"> </h5>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="scripts/mortgage.js"></script>
 </body>
 </html>
