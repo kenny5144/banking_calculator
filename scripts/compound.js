@@ -12,8 +12,7 @@ function init (){
 }
 
 function calculateButtonClicked()
-{
-    const depositElement =  document.getElementById("deposit");
+{                           
     const deposit = depositElement.value;
 
 
